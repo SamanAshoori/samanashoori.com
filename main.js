@@ -2353,44 +2353,20 @@ var game =
         }
 
 //array of news
-const news = ["This is pretty based huh",
-"Welcome to my text based rantings",
-"AAAAAAAAAAA help im trapped in the news ticker factory",
-"Oil is pretty much very cool",
+const news = ["I removed all the old news tickets but trust me they were lame",
+"Holy shit some of these were cringe",
+"looking back at this code - I am going to have a hard time adding anything",
+"This game was coded pre-chatgpt",
+"Oil is exactly $1 because i cannot be bothered to work in floats",
+"Somehow this is a portfolio porject",
+"Gamer moment",
+"I spent too much money on a laptop to get back into this shit",
+"No but for real why does javascript get hate",
 "Service guarantees citizenship",
-"This is going to be pretty annoying having to think of stuff to type",
-"Did you know 1 litre of oil there is 8000 calories now thats heavy bulking",
-"If it bleeds we can drill it",
-"Hope you're enjoying the game",
-"This was easier to implement than I imagined",
-"Did you know if you reset the game you are cool?",
-"Sometimes I wonder where it all went wrong",
-"You should check out the film there will be blood now that is a good film",
-"Fight club is overrated",
-"Please gib me your money so I can make more games ty",
-"Can this be considered poetry",
-"I secretly like Weezer",
-"My biggest secret is I like Big Bang Theory the TV show",
-"If you want the coolest high five look at your partners elbow",
-"Fun fact oil sells for exactly $1 because I am too lazy to work with cents",
-"I wonder how large this array can be before the code flips out",
-"Crazy to think that despite c02 levels rising since the 60s we still arent doing anything about it",
-"This game says a lot about the society in which we live in",
-"Send oil pics",
-"Early Game Tip - Maximise sales first idiot",
-"Tim if your reading this you owe me a Baja Blast",
-"Sab if your reading this you owe me a pint",
-"Margot if your reading this you owe me a pint",
-"Hahahah random words = funny",
-"Based",
-"Muscle Mommy",
-"The Geneva convention was a mistake",
-"Oil is flammable and inflammable",
-"Water and Oil dont mix like me and my ex wife",
-"Will take suggestions of what to add here",
-"I am now a game dev",
-"Do you even drill brah",
-"If you are playing this game that means you are cool and I like you"
+"Might even migrate this to a new JS framework",
+"Graphics made by yours truly",
+"I'd like to see paul allens clicker game",
+"something funny here"
 ]
 
 function shuffle(array) {
@@ -2417,6 +2393,7 @@ shuffle(news);
 const logo = "<img src='images/oil2.png' width='25px' style='margin:0 8px'/>";
 let tickerText = "";
 let incNumber = 0;
+//bro the shuffle feature is insane
 //looping through the news array
 while(incNumber<news.length)
 {
