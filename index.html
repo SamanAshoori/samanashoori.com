@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>clickerGame</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="main.css">      
+    </head>
+
+    <body style="background-color:#404040">    
+        <div id="marquee-cont">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="50px" style="background:#494c4f;">
+                  <button id="ticker-title">"News":</button>
+                </td>
+                <td id="marquee">
+                  <marquee onmouseover="//this.stop();" onmouseout="//this.start();" id='scroll'>
+                  temp <img src="images/oil.png" width="25px" />
+                  </marquee>
+                </td>
+              </tr>
+            </table>
+          </div>    
+        <div class = "sectionLeft unselectable">
+            <center>
+                <div class = "scoreContainer unselectable">
+                <span id = "oil">0</span> Oil <br>
+                <span id = "oilPerSecond">0</span> Oil Per Second <br>
+                <span id = "dollars">$ 0</span> <br>
+                <span id = "dollarsPerSecond">$0</span> Per Second<br>
+                </div>
+                <br>
+                <div class = "unselectable" id="clicker"></div>
+            </center>
+
+            <div class = "sectionFooter">
+                <h5>There will be clicks</h5>
+                <button onclick="resetGame();">Reset Game</button>
+                <p id = "totalClicks">Total Clicks:</p>
+                <p id = "totalDollars">Total Dollars:</p>
+                <p id = "totalOil">Total Oil:</p>
+                <p id = "gameVersion"></p>
+            </div>
+        </div>
+
+        <!--Button to buy upgrades-->
+        <div class = "sectionRight"> 
+            <div id = "upgradeContainer"> </div>
+            <div id="shopContainer"></div>
+            <div id ="salesContainer"></div>
+            <div id="awardContainer"></div>
+        </div>
+
+        <script src="main.js"></script>
+
+        
+    </body>
+    <a href="todolist.html">
+      <button>To Do List</button>
+    </a>
+    <a href="seconds.html">
+      <button>Seconds</button>
+    </a>
+    
+</HTML>
