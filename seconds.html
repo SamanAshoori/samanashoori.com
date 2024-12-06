@@ -3,13 +3,21 @@
     <head>
         <title>Seconds Lived vs Seconds Left</title>
         <link rel="stylesheet" href="main.css">
+        
     </head>
     <body style="background-color:#404040">
         <h1>Welcome to your time</h1>
-        <h1 id="SecondsLived">0</h1>
-        <h1 id="SecondsLeft">0</h1>
-        <h1 id="PercentLived">0</h1>
+        <input type="date" id="userBirthday" placeholder="Enter your birthday">
+        <button onclick="setBirthday()">Set Birthday</button>
+
+        <div id="SecondsLived"></div>
+        <div id="SecondsLeft"></div>
+        <div id="PercentLived"></div>
         <script src="seconds.js"></script>
     </body>  
-
+    <footer>
+        <a href="index.html">
+            <button>Home</button>
+          </a>
+    </footer>
 </HTML>
