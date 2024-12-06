@@ -1,0 +1,221 @@
+            .sectionLeft
+            {
+                float:left;
+                width: 50%;
+            }
+            .sectionRight
+            {
+                float:right;
+                width: 30%;
+            }
+            .scoreContainer
+            {
+                background-color: rgb(238,238,238,0.5);
+                width: 60%;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            /*.clickerContainer img
+            {
+                position: relative;
+                transition: all 0.15s ease-in-out;
+            }
+            .clickerContainer img:hover{transform: scale(1.10);}
+            .clickerContainer img:active{transform: scale(0.99);}*/
+
+            #clicker {
+                background-image: url("./images/oil2.png");
+                background-repeat: contain;
+                position: center;
+                transition: all .2s ease-in-out;
+                height: 400px;
+                width: 400px;
+            }
+
+            #clicker:hover {transform: scale(1.10);}
+            #clicker:active{transform: scale(0.99);}
+
+            #clicker > .number
+            {
+                z-index: 99;
+                font-size: 24px;
+                color: white;
+                position: absolute;
+                
+            }
+
+            .shopContainer
+            {
+                float: right;
+            }
+            .shopButton 
+            {
+                background-color: #b5b5b5;
+                transition: all .2s ease-in-out;
+                border-radius: 10px;
+                width: 100%;
+                margin: 10px 0px 10px 0px;
+
+            }
+            .shopButton:hover
+            {
+                background-color: #c7c7c7;
+                transition: all 0.2s ease-in-out;;
+            }
+            .shopButton #image
+            {
+                width: 25%;
+            }
+
+            .shopButton img
+            {
+                height: 64px;
+                width: 64px;
+            }
+            .shopButton #nameAndCost p
+            {
+                margin: 0px;
+                width: 40%;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            
+            .shopButton #nameAndCost p:first-of-type
+            {
+                font-size: 24px;
+
+            }
+            .shopButton #amount
+            {
+                font-size: 48px;
+                color: #595959;
+                width: 15%;
+            }
+
+            .shopButton #oilps
+            {
+                margin: 0px;
+                font-size: 30px;
+                width: 10%;
+            }
+
+            .sectionFooter{
+                margin-top: 20%;
+            }
+
+            .unselectable
+            {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            #upgradeContainer img{
+                height: 64px;
+                width: 64px;
+            }
+            .shopButton #oilPerSecond
+            {
+                width: 30%;
+                text-align: left;
+                margin-right: 20px;
+            }
+            .salesButton #oilPerSecondSold
+            {
+                width: 30%;
+                text-align: left;
+                margin-right: 20px;
+            }  
+            #awardContainer img{
+                height: 64px;
+                width: 64px;
+            }
+
+            .salesContainer
+            {
+                float: right;
+                margin-top: 30px;
+
+            }
+            .salesButton 
+            {
+                background-color: #b5b5b5;
+                transition: all .2s ease-in-out;
+                border-radius: 10px;
+                width: 100%;
+                margin: 10px 0px 10px 0px;
+
+            }
+            .salesButton:hover
+            {
+                background-color: #c7c7c7;
+                transition: all 0.2s ease-in-out;;
+            }
+            .salesButton #image
+            {
+                width: 25%;
+            }
+
+            .salesButton img
+            {
+                height: 64px;
+                width: 64px;
+            }
+
+            .salesButton #nameAndCost p
+            {
+                margin: 0px;
+                width: 40%;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            
+            .salesButton #nameAndCost p:first-of-type
+            {
+                font-size: 24px;
+
+            }
+            .salesButton #amount
+            {
+                font-size: 48px;
+                color: #595959;
+                width: 15%;
+            }
+
+            .salesButton #oilps
+            {
+                margin: 0px;
+                font-size: 30px;
+                width: 10%;
+            }
+
+            #marquee-cont {
+                background: #494c4f;
+                margin-top:10px;
+              }
+              #marquee-cont marquee {
+                margin-top: 5px;
+              }
+              #marquee-news {
+                
+                overflow: visible;
+                color:white;
+                background: #494c4f;
+                padding: 5px;
+              }
+              #ticker-title{
+                border:none;
+                padding:5px 20px;
+                background:#494c4f;
+                color:white;
+              }
+              #ticker-title:focus{
+                outline:none;
+              }
+
+             
