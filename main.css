@@ -1,221 +1,109 @@
-            .sectionLeft
-            {
-                float:left;
-                width: 50%;
-            }
-            .sectionRight
-            {
-                float:right;
-                width: 30%;
-            }
-            .scoreContainer
-            {
-                background-color: rgb(238,238,238,0.5);
-                width: 60%;
-                padding: 10px;
-                border-radius: 5px;
-                font-size: 24px;
-                font-weight: bold;
-                font-family: 'Courier New', Courier, monospace;
-            }
-            /*.clickerContainer img
-            {
-                position: relative;
-                transition: all 0.15s ease-in-out;
-            }
-            .clickerContainer img:hover{transform: scale(1.10);}
-            .clickerContainer img:active{transform: scale(0.99);}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
 
-            #clicker {
-                background-image: url("./images/oil2.png");
-                background-repeat: contain;
-                position: center;
-                transition: all .2s ease-in-out;
-                height: 400px;
-                width: 400px;
-            }
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* White text for headings */
+}
 
-            #clicker:hover {transform: scale(1.10);}
-            #clicker:active{transform: scale(0.99);}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-            #clicker > .number
-            {
-                z-index: 99;
-                font-size: 24px;
-                color: white;
-                position: absolute;
-                
-            }
+li {
+    float: left;
+}
 
-            .shopContainer
-            {
-                float: right;
-            }
-            .shopButton 
-            {
-                background-color: #b5b5b5;
-                transition: all .2s ease-in-out;
-                border-radius: 10px;
-                width: 100%;
-                margin: 10px 0px 10px 0px;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-            }
-            .shopButton:hover
-            {
-                background-color: #c7c7c7;
-                transition: all 0.2s ease-in-out;;
-            }
-            .shopButton #image
-            {
-                width: 25%;
-            }
+li a:hover {
+    background-color: #111;
+}
 
-            .shopButton img
-            {
-                height: 64px;
-                width: 64px;
-            }
-            .shopButton #nameAndCost p
-            {
-                margin: 0px;
-                width: 40%;
-                font-size: 15px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
+.content {
+    display: none;
+}
 
-            
-            .shopButton #nameAndCost p:first-of-type
-            {
-                font-size: 24px;
+.content-active {
+    display: block;
+}
 
-            }
-            .shopButton #amount
-            {
-                font-size: 48px;
-                color: #595959;
-                width: 15%;
-            }
+button {
+    background-color: #333333; /* Dark button background */
+    color: #e0e0e0; /* Light button text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-            .shopButton #oilps
-            {
-                margin: 0px;
-                font-size: 30px;
-                width: 10%;
-            }
+button:hover {
+    background-color: #444444; /* Slightly lighter button background on hover */
+}
 
-            .sectionFooter{
-                margin-top: 20%;
-            }
+footer {
+    background-color: #1e1e1e; /* Footer background */
+    color: #e0e0e0; /* Footer text color */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333333;
+}
 
-            .unselectable
-            {
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-            #upgradeContainer img{
-                height: 64px;
-                width: 64px;
-            }
-            .shopButton #oilPerSecond
-            {
-                width: 30%;
-                text-align: left;
-                margin-right: 20px;
-            }
-            .salesButton #oilPerSecondSold
-            {
-                width: 30%;
-                text-align: left;
-                margin-right: 20px;
-            }  
-            #awardContainer img{
-                height: 64px;
-                width: 64px;
-            }
+a {
+    color: #bb86fc; /* Link color */
+    text-decoration: none;
+}
 
-            .salesContainer
-            {
-                float: right;
-                margin-top: 30px;
+a:hover {
+    text-decoration: underline;
+}
+/* Adjust padding between heading and paragraph */
+#work , #education {
+    text-align: center;
+}
+#work h4, #education h4 {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    font-size: 15px;
+    display: block;
+}
 
-            }
-            .salesButton 
-            {
-                background-color: #b5b5b5;
-                transition: all .2s ease-in-out;
-                border-radius: 10px;
-                width: 100%;
-                margin: 10px 0px 10px 0px;
+#work h5, #education h5 {
+    margin-top: 0px;
+    font-size: 11px;
+    font-style: italic;
+    display: block;
+}
 
-            }
-            .salesButton:hover
-            {
-                background-color: #c7c7c7;
-                transition: all 0.2s ease-in-out;;
-            }
-            .salesButton #image
-            {
-                width: 25%;
-            }
+#work p, #education p {
+    font-size: 13px;
+    text-align: left; /* Align text to the left */
+    max-width: 600px;
+    margin-left: auto; /* Center the paragraph */
+    margin-right: auto; /* Center the paragraph */
+    margin-top: 2px;
+}
 
-            .salesButton img
-            {
-                height: 64px;
-                width: 64px;
-            }
-
-            .salesButton #nameAndCost p
-            {
-                margin: 0px;
-                width: 40%;
-                font-size: 15px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            
-            .salesButton #nameAndCost p:first-of-type
-            {
-                font-size: 24px;
-
-            }
-            .salesButton #amount
-            {
-                font-size: 48px;
-                color: #595959;
-                width: 15%;
-            }
-
-            .salesButton #oilps
-            {
-                margin: 0px;
-                font-size: 30px;
-                width: 10%;
-            }
-
-            #marquee-cont {
-                background: #494c4f;
-                margin-top:10px;
-              }
-              #marquee-cont marquee {
-                margin-top: 5px;
-              }
-              #marquee-news {
-                
-                overflow: visible;
-                color:white;
-                background: #494c4f;
-                padding: 5px;
-              }
-              #ticker-title{
-                border:none;
-                padding:5px 20px;
-                background:#494c4f;
-                color:white;
-              }
-              #ticker-title:focus{
-                outline:none;
-              }
-
+#buttons{
+    margin-bottom: 20px;
+}
              

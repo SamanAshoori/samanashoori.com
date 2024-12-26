@@ -1,26 +1,58 @@
 <!DOCTYPE html>
-<HTML>
-    <head>
-        <title>samanashoori</title>
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <link rel="stylesheet" href="main.css">      
-    </head>
+<html>
+<head>
+    <title>samanashoori</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="todolist.html">To do List</a></li>
+        <li><a href="seconds.html">Seconds</a></li>
+        <li><a href="game.html">There will be clicks</a></li>
+    </ul>
 
-    <body>            
-        <h1>Welcome to my Website</h1>
-        <p>My name is Saman Ashoori</p>    
-    </body>
-    
+    <h1>Welcome to my Website</h1>
+    <p>My name is Saman Ashoori and sometimes I make cool shit</p>
+
+    <div id = "buttons">
+        <button onclick="showContent('work')">Work Experience</button>
+        <button onclick="showContent('education')">Education</button>    
+    </div>
+
+    <div id="work" class="content">
+      <h4>Data Analyst Apprentice- SMRS</h4>
+      <h5>(September 2023 - Present)</h5>
+      <p>At SMRS I started as a Data Analyst apprentice but because of my previous coding and computer science background it was no issue keeping up with the training.</p>
+      <p>I have worked on projects that involved me using Python, Tableau, Power BI and other tools.</p>
+      <p>Outside of my scope of work - I created some programs to work with APIs to improve processes within the company as well as other automation using python.</p>
+
+      <h4>Retail and Hospitality</h4>
+      <h5>(September 2018 - Present)</h5>
+      <p>I have worked at a range of Retail and Hospitality companies before and during my University studies and during my apprenticeship. From 2022 I have at least always had 2 jobs</p>
+      <p>Greggs - Team Member to Shift Leader (2018-2022), Revolution - Bartender (2022-2025), Aldi - Store Assitant (2023-2025) </p>
+      <p>I have mainly done this to supplment my apprenticeship income as well as keeping contact with colleagues I like</p>
+      <p>I have managed my time well to make sure I still get sleep, gym and social life without it affecting my work </p>
+    </div>
+    <div id="education" class="content">
+      <h4>DipHE Computer Science - Manchester Metropolitan University</h4>
+      <h5>(September 2019 - May 2022)</h5>
+      <p>During my time at MMU - I have undertaken the fundamentals of computer science</p>
+      <p>I learnt to program in Java, C++ , C# , SQL and Python as well as the Web Dev Languages (JS , HTML , CSS , PHP)</p>
+      <p>I have also learnt about the theory of computer science such as how computer architecture works, How components work etc.</p>
+      <p>I worked on Databases, Mobile applications, set up my own Git repo, worked with Linux</p>
+
+      <h4>Meadowhead School Academy Trust</h4>
+      <h5>(September 2012 - June 2019)</h5>
+      <p>2 A Levels: Computer Science and Geography</p>
+      <p>BTEC Level 3 National Extended Certificate Business Studies: Distinction</p>
+      <p>8 GCSEs including Maths & English</p>
+    </div>
+
     <footer>
-      <a href="todolist.html">
-        <button>To Do List</button>
-      </a>
-      <a href="seconds.html">
-        <button>Seconds</button>
-      </a>
-      <a href="game.html">
-        <button>There will be clicks</button>
-      </a>
     </footer>
-    
-</HTML>
+
+    <script src="main.js"></script>
+</body>
+</html>

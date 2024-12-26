@@ -3,6 +3,16 @@
                 float:left;
                 width: 50%;
             }
+
+            body {
+                background-color: #121212; /* Dark background */
+                color: #e0e0e0; /* Light text color */
+                font-family: 'Arial', sans-serif;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                color: #ffffff; /* White text for headings */
+            }
             .sectionRight
             {
                 float:right;
@@ -10,13 +20,14 @@
             }
             .scoreContainer
             {
-                background-color: rgb(238,238,238,0.5);
+                background-color: #000000; /* Dark background */
+                color: #e0e0e0; /* Light text color */
+                font-family: 'Arial', sans-serif;
                 width: 60%;
                 padding: 10px;
                 border-radius: 5px;
                 font-size: 24px;
                 font-weight: bold;
-                font-family: 'Courier New', Courier, monospace;
             }
             /*.clickerContainer img
             {
@@ -53,7 +64,7 @@
             }
             .shopButton 
             {
-                background-color: #b5b5b5;
+                background-color: #343434;
                 transition: all .2s ease-in-out;
                 border-radius: 10px;
                 width: 100%;
@@ -62,7 +73,7 @@
             }
             .shopButton:hover
             {
-                background-color: #c7c7c7;
+                background-color: #232323;
                 transition: all 0.2s ease-in-out;;
             }
             .shopButton #image
@@ -80,7 +91,7 @@
                 margin: 0px;
                 width: 40%;
                 font-size: 15px;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Arial', sans-serif;
             }
 
             
@@ -92,7 +103,7 @@
             .shopButton #amount
             {
                 font-size: 48px;
-                color: #595959;
+                color: white;
                 width: 15%;
             }
 
@@ -143,7 +154,7 @@
             }
             .salesButton 
             {
-                background-color: #b5b5b5;
+                background-color: #343434;
                 transition: all .2s ease-in-out;
                 border-radius: 10px;
                 width: 100%;
@@ -152,7 +163,7 @@
             }
             .salesButton:hover
             {
-                background-color: #c7c7c7;
+                background-color: #232323;
                 transition: all 0.2s ease-in-out;;
             }
             .salesButton #image
@@ -183,7 +194,7 @@
             .salesButton #amount
             {
                 font-size: 48px;
-                color: #595959;
+                color: white;
                 width: 15%;
             }
 
