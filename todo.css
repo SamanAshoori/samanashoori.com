@@ -1,0 +1,44 @@
+button {
+    background-color: #333333; /* Dark button background */
+    color: #e0e0e0; /* Light button text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body h1{
+    text-align: center;
+    color: #ffffff; /* White text for headings */
+}
+#inputField {
+    height: 35px; /* Set the same height as button */
+    display: inline;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 9px;
+    padding: 5px;
+}
+.inputContainer {
+    display: flex;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    gap: 10px; /* Add some space between the input field and button */
+    margin-top: 20px; /* Add some margin to the top */
+}
+#body button {
+    height: 40px; /* Set the same height as input field */
+    display: inline;
+    align-items: center;
+
+
+}
+footer {
+    display: flex;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    margin-top: 20px; /* Add some margin to the top */
+}
+footer button{
+    align-items: center;
+    display: inline;
+}
