@@ -106,4 +106,34 @@ a:hover {
 #buttons{
     margin-bottom: 20px;
 }
-             
+#shortIntro h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#shortIntro p{
+    text-align: center;
+}
+.wavy {
+    display: inline-block;
+    animation-name: wavy;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out; /* Smooth easing for both rise and fall */
+    animation-iteration-count: 1;  /* Run the animation once */
+    position: relative;
+    top: 0;
+}
+
+@keyframes wavy {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -15px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+  
