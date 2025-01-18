@@ -96,10 +96,10 @@ a:hover {
 
 #work p, #education p {
     font-size: 13px;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
     max-width: 600px;
-    margin-left: auto; /* Center the paragraph */
-    margin-right: auto; /* Center the paragraph */
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 2px;
 }
 
@@ -111,29 +111,6 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 10px;
 }
-#shortIntro p{
-    text-align: center;
-}
-.wavy {
-    display: inline-block;
-    animation-name: wavy;
-    animation-duration: 1.3s;
-    animation-timing-function: ease-in-out; /* Smooth easing for both rise and fall */
-    animation-iteration-count: 1;  /* Run the animation once */
-    position: relative;
-    top: 0;
-}
 
-@keyframes wavy {
-    0% {
-        top: 0px;
-    }
-    50% {
-        top: -15px;
-    }
-    100% {
-        top: 0px;
-    }
-}
 
   

@@ -38,8 +38,6 @@ function updateText() {
             }, index * 60 + 200); // Stagger the animation slightly for each letter
         }
     });
-
-    // After 3 seconds, remove the wavy class and allow it to trigger again
     setTimeout(() => {
         // Remove the wavy class to reset the animation
         Array.from(h1.children).forEach(span => {
@@ -48,7 +46,7 @@ function updateText() {
             }
         });
         isAnimating = false; // Allow the animation to be retriggered
-    }, 3000); // 3 seconds duration of the animation
+    }, 4000); // 4 seconds duration of the animation
 }
 
 // Apply the updateText function on the first click
