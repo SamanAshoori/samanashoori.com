@@ -4,6 +4,7 @@
     <title>Welcome</title>
     <link rel="icon" type="image/png" href="images/binary2.png">
     <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <ul>
@@ -14,58 +15,61 @@
         <li><a href="blog/home.html">Blog</a></li>
     </ul>
 
-    <h1 id="animated">
-      Welcome to my <span class="strikethrough">Portfolio</span> Website
-    </h1>  
-    <p>My name is Saman Ashoori - 24 year old Data Analyst - Fan of cool stuff</p>
+    <main>
+      <h1 id="animated">
+        Welcome to my <span id="portfolioText">Portfolio</span> <span id="websiteText">Website</span>
+      </h1>
+        <p>My name is Saman Ashoori - 24 year old Data Analyst - Fan of cool stuff</p>
 
-    <div id=shortIntro>
-      <h4>About me</h4>
-      <p>I am a huge fan of Computer science and programming</p>
-      <p>Data Analyst based in Sheffield (UK)</p>
-      <p></p>
-    </div>
+        <div id="shortIntro">
+          <h4>About me</h4>
+          <p>I am a huge fan of Computer science and programming</p>
+          <p>Data Analyst based in Sheffield (UK)</p>
+        </div>
 
-    <div id = "buttons">
-        <button onclick="showContent('work')">Work Experience</button>
-        <button onclick="showContent('education')">Education</button>    
-    </div>
+        <div id="buttons">
+            <button onclick="showContent('work')">Work Experience</button>
+            <button onclick="showContent('education')">Education</button>    
+        </div>
 
-    <div id="work" class="content">
-      <h4>Data Analyst Apprentice- SMRS</h4>
-      <h5>(September 2023 - Present)</h5>
-      <p>At SMRS I started as a Data Analyst apprentice but because of my previous coding and computer science background - I did well on the training</p>
-      <p>I have worked on projects that involved me using Python, Tableau, Power BI and other tools.</p>
-      <p>Outside of my scope of work - I created some programs to work with APIs to improve processes within the company as well as other automation using python.</p>
-
-      <h4>Retail and Hospitality</h4>
-      <h5>(September 2018 - Present)</h5>
-      <p>I have worked at a range of Retail and Hospitality companies before and during my University studies and during my apprenticeship. From 2022 I have at least always had 2 jobs</p>
-      <p>Greggs - Team Member to Shift Leader (2018-2022), Revolution - Bartender (2022-2025), Aldi - Store Assitant (2023-2025) </p>
-      <p>I have mainly done this to supplment my apprenticeship income as well as keeping contact with colleagues I like</p>
-      <p>I have managed my time well to make sure I still get sleep, gym and social life without it affecting my work </p>
-    </div>
-    <div id="education" class="content">
-      <h4>DipHE Computer Science - Manchester Metropolitan University</h4>
-      <h5>(September 2019 - May 2022)</h5>
-      <p>During my time at MMU - I have undertaken the fundamentals of computer science</p>
-      <p>I learnt to program in Java, C++ , C# , SQL and Python as well as the Web Dev Languages (JS , HTML , CSS , PHP)</p>
-      <p>I have also learnt about the theory of computer science such as how computer architecture works, How components work etc.</p>
-      <p>I worked on Databases, Mobile applications, set up my own Git repo, worked with Linux</p>
-
-      <h4>Meadowhead School Academy Trust</h4>
-      <h5>(September 2012 - June 2019)</h5>
-      <p>2 A Levels: Computer Science and Geography</p>
-      <p>BTEC Level 3 National Extended Certificate Business Studies: Distinction</p>
-      <p>8 GCSEs including Maths & English</p>
-    </div>
+        <div class="content-container">
+            <div id="work" class="content">
+              <h3>Data Analyst Apprentice- SMRS</h3>
+              <h4>(September 2023 - Present)</h4>
+              <p>At SMRS I started as a Data Analyst apprentice but because of my previous coding and computer science background - I did well on the training</p>
+              <p>I have worked on projects that involved me using Python, Tableau, Power BI and other tools.</p>
+              <p>Outside of my scope of work - I created some programs to work with APIs to improve processes within the company as well as other automation using python.</p>
+        
+              <h3>Retail and Hospitality</h3>
+              <h4>(September 2018 - Present)</h4>
+              <p>I have worked at a range of Retail and Hospitality companies before and during my University studies and during my apprenticeship. From 2022 I have at least always had 2 jobs</p>
+              <p>Greggs - Team Member to Shift Leader (2018-2022), Revolution - Bartender (2022-2025), Aldi - Store Assitant (2023-2025) </p>
+              <p>I have mainly done this to supplment my apprenticeship income as well as keeping contact with colleagues I like</p>
+              <p>I have managed my time well to make sure I still get sleep, gym and social life without it affecting my work </p>
+            </div>
+            <div id="education" class="content">
+              <h3>DipHE Computer Science - Manchester Metropolitan University</h3>
+              <h4>(September 2019 - May 2022)</h4>
+              <p>During my time at MMU - I have undertaken the fundamentals of computer science</p>
+              <p>I learnt to program in Java, C++ , C# , SQL and Python as well as the Web Dev Languages (JS , HTML , CSS , PHP)</p>
+              <p>I have also learnt about the theory of computer science such as how computer architecture works, How components work etc.</p>
+              <p>I worked on Databases, Mobile applications, set up my own Git repo, worked with Linux</p>
+        
+              <h3>Meadowhead School Academy Trust</h3>
+              <h4>(September 2012 - June 2019)</h4>
+              <p>2 A Levels: Computer Science and Geography</p>
+              <p>BTEC Level 3 National Extended Certificate Business Studies: Distinction</p>
+              <p>8 GCSEs including Maths & English</p>
+            </div>
+        </div>
+    </main>
 
     <footer>
       <h3>Contact me</h3>
       <p>saman.ashoori@outlook.com</p>
-      <a href="https://github.com/SamanAshoori" target="_blank"><img src="images/github.png" alt="github link" style="width: 25px;height:25px"></a>
-      <a href="https://www.kaggle.com/samanashoori" target="_blank"><img src="images/kaggle.png" alt="kaggle link" style="width: 25px;height: 25px;"></a>
-      <a href="https://www.linkedin.com/in/saman-ashoori/" target="_blank"><img src="images/linkedin.png" alt="linkedin link" style="width: 25px;height: 25px;"></a>
+      <a href="https://github.com/SamanAshoori" target="_blank"><img src="images/github.png" alt="github link"></a>
+      <a href="https://www.kaggle.com/samanashoori" target="_blank"><img src="images/kaggle.png" alt="kaggle link"></a>
+      <a href="https://www.linkedin.com/in/saman-ashoori/" target="_blank"><img src="images/linkedin.png" alt="linkedin link"></a>
     </footer>
 
     <script src="main.js"></script>

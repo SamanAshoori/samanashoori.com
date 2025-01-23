@@ -1,25 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
-    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
     text-align: center;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff; /* White text for headings */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    cursor: pointer;
+    animation: float 4s ease-in-out infinite;
+    position: relative;
+    /* Remove padding-right: 120px; */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#portfolioText {
+    position: relative;
+    display: inline-block;
+}
+
+#portfolioText::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00ff88, #00cc66);
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-active #portfolioText::after {
+    width: 100%;
+}
+
+#websiteText {
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(100%);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #00ff88;
+}
+
+.reveal-active #websiteText {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes headerBounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+#animated:hover {
+    text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background-color: rgba(25, 25, 25, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 li {
@@ -32,125 +102,108 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 2rem auto;
 }
 
 .content {
     display: none;
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    animation: fadeIn 0.6s ease;
 }
 
 .content-active {
     display: block;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 button {
-    background-color: #333333; /* Dark button background */
-    color: #e0e0e0; /* Light button text */
+    background: linear-gradient(135deg, #00ff88, #00cc66);
+    color: #121212;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #444444; /* Slightly lighter button background on hover */
+    transform: translateY(-2px);
 }
 
 footer {
-    background-color: #1e1e1e; /* Footer background */
-    color: #e0e0e0; /* Footer text color */
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #333333;
+    padding: 3rem 0;
+    background: rgba(25, 25, 25, 0.9);
+    border-top: 1px solid #333;
 }
 
-a {
-    color: #bb86fc; /* Link color */
-    text-decoration: none;
+footer img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-/* Adjust padding between heading and paragraph */
-#work , #education {
-    text-align: center;
-}
-#work h4, #education h4 {
-    margin-top: 20px;
-    margin-bottom: 2px;
-    margin-right: 2px;
-    font-size: 15px;
-    display: block;
+footer img:hover {
+    transform: translateY(-3px);
 }
 
-#work h5, #education h5 {
-    margin-top: 0px;
-    font-size: 11px;
-    font-style: italic;
-    display: block;
-}
-
-#work p, #education p {
-    font-size: 13px;
-    text-align: left; 
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2px;
-}
-
-#buttons{
-    margin-bottom: 20px;
-}
-#shortIntro h4{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-#shortIntro p{
-    text-align: center;
-}
-.wavy {
-    display: inline-block;
-    animation-name: wavy;
-    animation-duration: 1.3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 2;
-    position: relative;
-    top: 0;
-}
-
-@keyframes wavy {
-    0% {
-        top: 0px;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        padding-right: 0;
     }
-    50% {
-        top: -15px;
+    
+    #websiteText {
+        display: inline-block;
+        transform: none !important;
+        margin-top: 0;
+        margin-left: 5px; /* Ensure space on mobile */
     }
-    100% {
-        top: 0px;
+    
+    .reveal-active #websiteText {
+        opacity: 1;
+    }
+    
+    li {
+        float: none;
+        display: block;
+    }
+    
+    button {
+        width: 80%;
+        margin: 5px auto;
     }
 }
-
-.strikethrough {
-    position: relative;
-    display: inline-block;
-    color: #e0e0e0;
-}
-
-.strikethrough::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 2px;
-    background-color: #e0e0e0;
-    transform: translateY(-50%);
-}
-
+h3 {
+    font-size: 1.5rem;       /* 50% larger than default body text */
+    font-weight: 600;        /* Semi-bold weight */
+    margin-bottom: 0.5rem;   /* Space below heading */
+  }
   
+  p {
+    font-size: 1rem;         /* Base font size (adjust as needed) */
+    line-height: 1.6;        /* Maintain readability */
+  }
+  
+  h4 {
+    font-style: italic;      /* Italic text */
+    font-weight: 500;        /* Medium weight (optional) */
+    margin: 1rem 0;          /* Spacing around headings */
+  }
