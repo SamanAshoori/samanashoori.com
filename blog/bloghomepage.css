@@ -1,0 +1,123 @@
+/* Define the custom font */
+@font-face {
+    font-family: 'RunescapeUF';
+    src: url('/font/runescape_uf.ttf') format('truetype'); /* Relative path to the font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: 'RunescapeUF', 'Press Start 2P', cursive; /* Use custom font, fallback to pixelated font */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2d2d2d; /* Darker container background */
+    border: 4px solid #555; /* Rustic border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffcc00; /* OSRS yellow */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000; /* Pixelated shadow */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #ffcc00; /* OSRS yellow */
+    margin: 1.5rem 0;
+    text-shadow: 2px 2px #000; /* Pixelated shadow */
+}
+
+p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #e0e0e0;
+}
+
+/* Navigation */
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+ul.nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+ul.nav li a {
+    color: #00b0ff; /* OSRS blue */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid #00b0ff; /* OSRS blue border */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.nav li a:hover {
+    background-color: #00b0ff; /* OSRS blue background */
+    color: #1a1a1a; /* Dark text on hover */
+}
+
+/* Latest Posts */
+ul.posts {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+ul.posts li {
+    margin: 0.5rem 0;
+}
+
+ul.posts li a {
+    color: #ff6666; /* OSRS red */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid #ff6666; /* OSRS red border */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.posts li a:hover {
+    background-color: #ff6666; /* OSRS red background */
+    color: #1a1a1a; /* Dark text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    ul.nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}

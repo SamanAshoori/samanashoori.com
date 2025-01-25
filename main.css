@@ -30,7 +30,6 @@ h1 {
     cursor: pointer;
     animation: float 4s ease-in-out infinite;
     position: relative;
-    /* Remove padding-right: 120px; */
 }
 
 @keyframes float {
@@ -39,30 +38,21 @@ h1 {
 }
 
 #portfolioText {
-    position: relative;
-    display: inline-block;
+    cursor: pointer;
+    transition: all 0.6s ease;
 }
 
-#portfolioText::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 55%;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #00ff88, #00cc66);
-    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.reveal-active #portfolioText::after {
-    width: 100%;
+.strike-through {
+    text-decoration: line-through;
+    color: #888;
+    transition: all 0.6s ease;
 }
 
 #websiteText {
     opacity: 0;
     display: inline-block;
     transform: translateX(100%);
-    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     color: #00ff88;
 }
 
@@ -147,6 +137,12 @@ button:hover {
     transform: translateY(-2px);
 }
 
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
 footer {
     padding: 3rem 0;
     background: rgba(25, 25, 25, 0.9);
@@ -167,49 +163,49 @@ footer img:hover {
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
-        padding-right: 0;
     }
-    
+
     #websiteText {
         display: inline-block;
         transform: none !important;
         margin-top: 0;
-        margin-left: 5px; /* Ensure space on mobile */
+        margin-left: 5px;
     }
-    
+
     .reveal-active #websiteText {
         opacity: 1;
     }
-    
+
     li {
         float: none;
         display: block;
     }
-    
+
     button {
         width: 80%;
         margin: 5px auto;
     }
 }
+
 h3 {
-    font-size: 1.5rem;       /* 50% larger than default body text */
-    font-weight: 600;        /* Semi-bold weight */
-    margin-bottom: 0.5rem;   /* Space below heading */
-  }
-  
-  p {
-    font-size: 1rem;         /* Base font size (adjust as needed) */
-    line-height: 1.6;        /* Maintain readability */
-  }
-  
-  h4 {
-    font-style: italic;      /* Italic text */
-    font-weight: 500;        /* Medium weight (optional) */
-    margin: 1rem 0;          /* Spacing around headings */
-  }
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 500;
+    margin: 1rem 0;
+}
 
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -223,7 +219,7 @@ h3 {
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Show on mobile */
+        display: block;
     }
 
     .nav-menu {
@@ -251,4 +247,40 @@ h3 {
     li a {
         padding: 10px 0;
     }
+}
+
+#portfolioText {
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.strike-through {
+    text-decoration: line-through;
+    color: #888;
+    transition: all 0.6s ease;
+}
+
+#websiteText {
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #00ff88;
+}
+
+.reveal-active #websiteText {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes headerBounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.content-container {
+    display: none; /* Hide the table initially */
+    max-width: 800px;
+    margin: 2rem auto;
 }

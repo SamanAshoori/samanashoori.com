@@ -1,232 +1,251 @@
-            .sectionLeft
-            {
-                float:left;
-                width: 50%;
-            }
+/* General Styles */
+body {
+    background-color: #0a0a0a; /* Very dark background */
+    color: #d4af37; /* Gold text color for contrast */
+    font-family: 'Georgia', serif; /* Classic, slightly rustic font */
+    line-height: 1.6;
+}
 
-            body {
-                background-color: #121212; /* Dark background */
-                color: #e0e0e0; /* Light text color */
-                font-family: 'Arial', sans-serif;
-            }
-            
-            h1, h2, h3, h4, h5, h6 {
-                color: #ffffff; /* White text for headings */
-            }
-            .sectionRight
-            {
-                float:right;
-                width: 30%;
-            }
-            .scoreContainer
-            {
-                background-color: #000000; /* Dark background */
-                color: #e0e0e0; /* Light text color */
-                font-family: 'Arial', sans-serif;
-                width: 60%;
-                padding: 10px;
-                border-radius: 5px;
-                font-size: 24px;
-                font-weight: bold;
-            }
-            /*.clickerContainer img
-            {
-                position: relative;
-                transition: all 0.15s ease-in-out;
-            }
-            .clickerContainer img:hover{transform: scale(1.10);}
-            .clickerContainer img:active{transform: scale(0.99);}*/
+h1, h2, h3, h4, h5, h6 {
+    color: #d4af37; /* Gold headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
 
-            #clicker {
-                background-image: url("./images/oil2.png");
-                background-repeat: contain;
-                position: center;
-                transition: all .2s ease-in-out;
-                height: 400px;
-                width: 400px;
-            }
+/* Sections */
+.sectionLeft {
+    float: left;
+    width: 50%;
+}
 
-            #clicker:hover {transform: scale(1.10);}
-            #clicker:active{transform: scale(0.99);}
+.sectionRight {
+    float: right;
+    width: 30%;
+}
 
-            #clicker > .number
-            {
-                z-index: 99;
-                font-size: 24px;
-                color: white;
-                position: absolute;
-                
-            }
+/* Score Container */
+.scoreContainer {
+    background-color: #1c1c1c; /* Dark background */
+    color: #d4af37; /* Gold text */
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #3e3e3e; /* Industrial border */
+}
 
-            .shopContainer
-            {
-                float: right;
-            }
-            .shopButton 
-            {
-                background-color: #343434;
-                transition: all .2s ease-in-out;
-                border-radius: 10px;
-                width: 100%;
-                margin: 10px 0px 10px 0px;
+/* Clicker Container */
+#clicker {
+    background-image: url("./images/oil2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.2s ease-in-out;
+    height: 400px;
+    width: 400px;
+    border: 4px solid #3e3e3e; /* Industrial border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
 
-            }
-            .shopButton:hover
-            {
-                background-color: #232323;
-                transition: all 0.2s ease-in-out;;
-            }
-            .shopButton #image
-            {
-                width: 25%;
-            }
+#clicker:hover {
+    transform: scale(1.10);
+}
 
-            .shopButton img
-            {
-                height: 64px;
-                width: 64px;
-            }
-            .shopButton #nameAndCost p
-            {
-                margin: 0px;
-                width: 40%;
-                font-size: 15px;
-                font-family: 'Arial', sans-serif;
-            }
+#clicker:active {
+    transform: scale(0.99);
+}
 
-            
-            .shopButton #nameAndCost p:first-of-type
-            {
-                font-size: 24px;
+#clicker > .number {
+    z-index: 99;
+    font-size: 24px;
+    color: #d4af37; /* Gold text */
+    position: absolute;
+}
 
-            }
-            .shopButton #amount
-            {
-                font-size: 48px;
-                color: white;
-                width: 15%;
-            }
+/* Shop Container */
+.shopContainer {
+    float: right;
+}
 
-            .shopButton #oilps
-            {
-                margin: 0px;
-                font-size: 30px;
-                width: 10%;
-            }
+.shopButton {
+    background-color: #2a2a2a; /* Dark background */
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid #3e3e3e; /* Industrial border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
 
-            .sectionFooter{
-                margin-top: 20%;
-            }
+.shopButton:hover {
+    background-color: #1a1a1a; /* Darker background on hover */
+}
 
-            .unselectable
-            {
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-            #upgradeContainer img{
-                height: 64px;
-                width: 64px;
-            }
-            .shopButton #oilPerSecond
-            {
-                width: 30%;
-                text-align: left;
-                margin-right: 20px;
-            }
-            .salesButton #oilPerSecondSold
-            {
-                width: 30%;
-                text-align: left;
-                margin-right: 20px;
-            }  
-            #awardContainer img{
-                height: 64px;
-                width: 64px;
-            }
+.shopButton #image {
+    width: 25%;
+}
 
-            .salesContainer
-            {
-                float: right;
-                margin-top: 30px;
+.shopButton img {
+    height: 64px;
+    width: 64px;
+    filter: sepia(50%); /* Adds a rustic, aged look */
+}
 
-            }
-            .salesButton 
-            {
-                background-color: #343434;
-                transition: all .2s ease-in-out;
-                border-radius: 10px;
-                width: 100%;
-                margin: 10px 0px 10px 0px;
+.shopButton #nameAndCost p {
+    margin: 0;
+    width: 40%;
+    font-size: 15px;
+    font-family: 'Georgia', serif;
+    color: #d4af37; /* Gold text */
+}
 
-            }
-            .salesButton:hover
-            {
-                background-color: #232323;
-                transition: all 0.2s ease-in-out;;
-            }
-            .salesButton #image
-            {
-                width: 25%;
-            }
+.shopButton #nameAndCost p:first-of-type {
+    font-size: 24px;
+}
 
-            .salesButton img
-            {
-                height: 64px;
-                width: 64px;
-            }
+.shopButton #amount {
+    font-size: 48px;
+    color: #d4af37; /* Gold text */
+    width: 15%;
+}
 
-            .salesButton #nameAndCost p
-            {
-                margin: 0px;
-                width: 40%;
-                font-size: 15px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
+.shopButton #oilps {
+    margin: 0;
+    font-size: 30px;
+    width: 10%;
+    color: #d4af37; /* Gold text */
+}
 
-            
-            .salesButton #nameAndCost p:first-of-type
-            {
-                font-size: 24px;
+/* Sales Container */
+.salesContainer {
+    float: right;
+    margin-top: 30px;
+}
 
-            }
-            .salesButton #amount
-            {
-                font-size: 48px;
-                color: white;
-                width: 15%;
-            }
+.salesButton {
+    background-color: #2a2a2a; /* Dark background */
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid #3e3e3e; /* Industrial border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
 
-            .salesButton #oilps
-            {
-                margin: 0px;
-                font-size: 30px;
-                width: 10%;
-            }
+.salesButton:hover {
+    background-color: #1a1a1a; /* Darker background on hover */
+}
 
-            #marquee-cont {
-                background: #494c4f;
-                margin-top:10px;
-              }
-              #marquee-cont marquee {
-                margin-top: 5px;
-              }
-              #marquee-news {
-                
-                overflow: visible;
-                color:white;
-                background: #494c4f;
-                padding: 5px;
-              }
-              #ticker-title{
-                border:none;
-                padding:5px 20px;
-                background:#494c4f;
-                color:white;
-              }
-              #ticker-title:focus{
-                outline:none;
-              }
+.salesButton #image {
+    width: 25%;
+}
 
-             
+.salesButton img {
+    height: 64px;
+    width: 64px;
+    filter: sepia(50%); /* Adds a rustic, aged look */
+}
+
+.salesButton #nameAndCost p {
+    margin: 0;
+    width: 40%;
+    font-size: 15px;
+    font-family: 'Georgia', serif;
+    color: #d4af37; /* Gold text */
+}
+
+.salesButton #nameAndCost p:first-of-type {
+    font-size: 24px;
+}
+
+.salesButton #amount {
+    font-size: 48px;
+    color: #d4af37; /* Gold text */
+    width: 15%;
+}
+
+.salesButton #oilps {
+    margin: 0;
+    font-size: 30px;
+    width: 10%;
+    color: #d4af37; /* Gold text */
+}
+
+/* Footer */
+.sectionFooter {
+    margin-top: 20%;
+}
+
+/* Unselectable Text */
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Upgrade and Award Containers */
+#upgradeContainer img,
+#awardContainer img {
+    height: 64px;
+    width: 64px;
+    filter: sepia(50%); /* Adds a rustic, aged look */
+}
+
+/* Marquee Container */
+#marquee-cont {
+    background: #2a2a2a; /* Dark background */
+    margin-top: 10px;
+    border: 2px solid #3e3e3e; /* Industrial border */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+#marquee-cont marquee {
+    margin-top: 5px;
+}
+
+#marquee-news {
+    overflow: visible;
+    color: #d4af37; /* Gold text */
+    background: #2a2a2a; /* Dark background */
+    padding: 5px;
+}
+
+#ticker-title {
+    border: none;
+    padding: 5px 20px;
+    background: #2a2a2a; /* Dark background */
+    color: #d4af37; /* Gold text */
+}
+
+#ticker-title:focus {
+    outline: none;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navigation-buttons a {
+    text-decoration: none;
+}
+
+.navigation-buttons button {
+    background-color: #343434;
+    color: #d4af37;
+    border: 2px solid #3e3e3e;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navigation-buttons button:hover {
+    background-color: #232323;
+}
