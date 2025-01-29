@@ -215,6 +215,7 @@ h4 {
     left: 10px;
     z-index: 2000;
     cursor: pointer;
+    font-size: 10px;
 }
 
 @media (max-width: 768px) {
