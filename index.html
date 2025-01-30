@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome</title>
+    <title>Saman Ashoori</title>
     <link rel="icon" type="image/png" href="images/binary2.png">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,6 @@
         <div id="buttons">
             <button onclick="showContent('work')" id="workButton">Work Experience</button>
             <button onclick="showContent('education')" id="educationButton">Education</button>
-            <button onclick="showContent('projects')" id="projectsButton">Projects</button>
         </div>
         <div class="content-container">
             <div id="work" class="content">
@@ -57,16 +56,40 @@
                 <p>BTEC Level 3 National Extended Certificate Business Studies: Distinction</p>
                 <p>8 GCSEs including Maths & English</p>
             </div>
-            <div id="projects" class="content">
-                <h3>Projects</h3>
-                <h4>(Ongoing)</h4>
-                <p>Here are some of the projects I have worked on:</p>
-                <p>Discord Bot that sends a gif when I end a message with !!! - Made with Replit and Python</p>
-                <p>Data Visualization on Danish Housing market in Jupyter Notebooks - Python Jupyter Notebooks</p>
-                <p>Caffeine Tracker on this website using PostgreSQl , Flask (Python) , Replit to host it</p>
-            </div>
         </div>
 
+    <div id="projects_table">
+        <h3>Projects</h3>
+        <p>Here are projects I have worked on - most can be found on my GitHub or Kaggle</p>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Technologies</th>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/SamanAshoori/samanashoori.com" target="_blank">This MF Website</a></td>
+                <td>My portfolio website including the blog, to do list, seconds and the hit game there will be clicks</td>
+                <td>HTML, CSS, JS</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.kaggle.com/code/samanashoori/danish-house-market-analysis" target="_blank">Jupyter Nutebook on Danish Housing Market</a></td>
+                <td>A small little analysis I did on a dataset from kaggle on the Danish housing scene.</td>
+                <td>Python (Jupyter, pandas, numpy, matplotlib, scikit-learn)</td>
+            </tr>
+            <tr>
+                <td><a href="https://replit.com/@samanashoori/LFG#readme.md" target="_blank">LFG BOT</a></td>
+                <td>LETS FUCKING GO Bot - A discord bot that is ran on replit and deployed on my discord server with friends that sends a gif if the correct conditions appear</td>
+                <td>Python, Discord API</td>
+            </tr>
+            <tr>
+                <td><a href="https://replit.com/@samanashoori/caffeine-tracker" target="_blank">Caffeine Tracker</a></td>
+                <td>My first attempt at a web based project - a interactive dashboard that tracks my caffeine</td>
+                <td>Python (Flask), SQL (PostgreSQl) - Deployed on Replit</td>
+            </tr>
+
+        </table>
+    </div>
         
     </main>
     <footer>
