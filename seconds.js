@@ -1,26 +1,60 @@
-let secondsLeft = document.getElementById('SecondsLeft');
-let secondsLived = document.getElementById('SecondsLived');
-let percentLived = document.getElementById('PercentLived');
+let secondsLeft = document.getElementById('SecondsLeft').querySelector('.stat-value');
+let secondsLived = document.getElementById('SecondsLived').querySelector('.stat-value');
+let percentLived = document.getElementById('PercentLived').querySelector('.stat-value');
 
 let dateBorn;
-let dateDepart = new Date('12/29/2080');
+let dateDepart;
 
 function setBirthday() {
     let userBirthday = document.getElementById('userBirthday').value;
-    dateBorn = new Date(userBirthday);
+    if (!userBirthday) {
+        alert("Please enter your birthday in dd-mm-yyyy format!");
+        return;
+    }
+
+    // Validate the date format
+    let datePattern = /^(\d{2})-(\d{2})-(\d{4})$/;
+    if (!datePattern.test(userBirthday)) {
+        alert("Invalid date format! Please use dd-mm-yyyy.");
+        return;
+    }
+
+    // Convert the input to a Date object
+    let [day, month, year] = userBirthday.split('-');
+    dateBorn = new Date(`${year}-${month}-${day}`);
+
+    // Check if the date is valid
+    if (isNaN(dateBorn.getTime())) {
+        alert("Invalid date! Please enter a valid date in dd-mm-yyyy format.");
+        return;
+    }
+
+    // Calculate departure date (80 years after birthday)
+    dateDepart = new Date(dateBorn);
+    dateDepart.setFullYear(dateBorn.getFullYear() + 80);
+
     updateDisplay();
 }
 
 function updateDisplay() {
     var display = setInterval(function() {
         var dateNow = new Date();
-        let dif = Math.abs(dateBorn.getTime() - dateNow.getTime()) / 1000;
-        let dif2 = Math.abs(dateNow.getTime() - dateDepart.getTime()) / 1000;
+
+        // Calculate seconds lived
+        let dif = Math.abs(dateNow.getTime() - dateBorn.getTime()) / 1000;
+
+        // Calculate seconds left
+        let dif2 = Math.abs(dateDepart.getTime() - dateNow.getTime()) / 1000;
+
+        // Calculate total lifespan in seconds
         let totalLifeSpan = Math.abs(dateDepart.getTime() - dateBorn.getTime()) / 1000;
+
+        // Calculate percentage lived
         let percent = ((dif / totalLifeSpan) * 100).toFixed(4);
-        
-        secondsLived.innerHTML = "Seconds Lived: " + Math.floor(dif);
-        secondsLeft.innerHTML = "Seconds Left: " + Math.floor(dif2);
-        percentLived.innerHTML = "Percent Lived: " + percent + "%";
+
+        // Update the DOM
+        secondsLived.textContent = Math.floor(dif).toLocaleString();
+        secondsLeft.textContent = Math.floor(dif2).toLocaleString();
+        percentLived.textContent = percent + "%";
     }, 1000);
 }

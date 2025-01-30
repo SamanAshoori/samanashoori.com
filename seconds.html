@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<HTML>
-    <head>
-        <title>Seconds Lived vs Seconds Left</title>
-        <link rel="stylesheet" href="main.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in Seconds</title>
+    <link rel="stylesheet" href="seconds.css">
+</head>
+<body>
+    <div class="container">
+        <h1>How Much Life Have You Lived?</h1>
+        <p class="subtitle">Enter your birthday in <strong>dd-mm-yyyy</strong> format to see how many seconds you've lived, how many you have left, and what percentage of your life you've used.</p>
         
-    </head>
-    <body style="background-color:#404040">
-        <h1>How much life lived vs left</h1>
-        <input type="date" id="userBirthday" placeholder="Enter your birthday">
-        <button onclick="setBirthday()">Set Birthday</button>
+        <div class="input-group">
+            <input type="text" id="userBirthday" placeholder="dd-mm-yyyy">
+            <button onclick="setBirthday()">Start Counting</button>
+        </div>
 
-        <div id="SecondsLived"></div>
-        <div id="SecondsLeft"></div>
-        <div id="PercentLived"></div>
-        <script src="seconds.js"></script>
-    </body>  
+        <div class="stats">
+            <div id="SecondsLived" class="stat-box">
+                <span class="stat-label">Seconds Lived</span>
+                <span class="stat-value">0</span>
+            </div>
+            <div id="SecondsLeft" class="stat-box">
+                <span class="stat-label">Seconds Left</span>
+                <span class="stat-value">0</span>
+            </div>
+            <div id="PercentLived" class="stat-box">
+                <span class="stat-label">Percent Lived</span>
+                <span class="stat-value">0%</span>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <a href="index.html">
             <button>Home</button>
-          </a>
+        </a>
     </footer>
-</HTML>
+
+    <script src="seconds.js"></script>
+</body>
+</html>
