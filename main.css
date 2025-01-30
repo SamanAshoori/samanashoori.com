@@ -37,10 +37,7 @@ h1 {
     50% { transform: translateY(-10px); }
 }
 
-#portfolioText {
-    cursor: pointer;
-    transition: all 0.6s ease;
-}
+
 
 .strike-through {
     text-decoration: line-through;
@@ -97,11 +94,6 @@ li a {
 
 li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-.content-container {
-    max-width: 800px;
-    margin: 2rem auto;
 }
 
 .content {
@@ -261,24 +253,12 @@ h4 {
     transition: all 0.6s ease;
 }
 
-#websiteText {
-    opacity: 0;
-    display: inline-block;
-    transform: translateX(100%);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    color: #00ff88;
-}
 
 .reveal-active #websiteText {
     opacity: 1;
     transform: translateX(0);
 }
 
-@keyframes headerBounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
-}
 
 .content-container {
     display: none; /* Hide the table initially */
