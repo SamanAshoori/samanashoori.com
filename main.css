@@ -275,10 +275,10 @@ h4 {
 }
 
 #projects_table h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #00ff88;
+    color: #2d9c5c;
 }
 
 #projects_table p {
@@ -308,10 +308,6 @@ h4 {
 }
 
 
-
-#projects_table td:nth-child(3) {
-    color: #00ff88;
-}
 #projects_table td .tech-item {
     display: inline-flex; 
     align-items: center; 
@@ -334,4 +330,65 @@ h4 {
 #projects_table td span {
     font-size: 0.9rem;
     color: #e0e0e0; 
+    
+}
+#projects_table a {
+    color: #E92A35; /* Enron red color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    display: inline-block; /* For transform effects */
+}
+
+#projects_table a:hover {
+    color: #B22222; /* Slightly darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#projects_table a:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+#projects_table a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #E92A35;
+    transition: width 0.5s ease; /* Animated underline */
+}
+
+#projects_table a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+#projects_table td:nth-child(3) {
+    color: #0083c6;
+}
+#projects_table td:nth-child(2) {
+    color: #2d9c5c;
+}
+
+#projects_table td .tech-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+#projects_table td img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+#projects_table td img:hover {
+    transform: scale(1.2);
+}
+
+#projects_table td span {
+    font-size: 0.9rem;
+    color: #e0e0e0;
 }
