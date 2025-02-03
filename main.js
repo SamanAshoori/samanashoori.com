@@ -74,3 +74,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Toggle mobile menu
+    hamburger.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+    });
+
+    // Hide the menu when a link is clicked (optional)
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function () {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Rest of your existing JavaScript code...
+});
