@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    background-color: #0a0a0a; /* Very dark background */
-    color: #d4af37; /* Gold text color for contrast */
+    background-color: #C2B280; /* Very dark background */
+    color: #e92a35 ; /* Gold text color for contrast */
     font-family: 'Georgia', serif; /* Classic, slightly rustic font */
     line-height: 1.6;
 }
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Score Container */
 .scoreContainer {
     background-color: #1c1c1c; /* Dark background */
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
     width: 60%;
     padding: 10px;
     border-radius: 5px;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 40%;
     font-size: 15px;
     font-family: 'Georgia', serif;
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
 }
 
 .shopButton #nameAndCost p:first-of-type {
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .shopButton #amount {
     font-size: 48px;
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
     width: 15%;
 }
 
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-size: 30px;
     width: 10%;
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
 }
 
 /* Sales Container */
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 40%;
     font-size: 15px;
     font-family: 'Georgia', serif;
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
 }
 
 .salesButton #nameAndCost p:first-of-type {
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .salesButton #amount {
     font-size: 48px;
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
     width: 15%;
 }
 
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-size: 30px;
     width: 10%;
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
 }
 
 /* Footer */
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #marquee-news {
     overflow: visible;
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
     background: #2a2a2a; /* Dark background */
     padding: 5px;
 }
@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     padding: 5px 20px;
     background: #2a2a2a; /* Dark background */
-    color: #d4af37; /* Gold text */
+    color: #e92a35 ; /* Gold text */
 }
 
 #ticker-title:focus {
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation-buttons button {
     background-color: #343434;
-    color: #d4af37;
+    color: #e92a35 ;
     border: 2px solid #3e3e3e;
     border-radius: 5px;
     padding: 10px 20px;
