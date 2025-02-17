@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import TodoList from './components/TodoList';
 import Seconds from './components/Seconds';
+import Home from './components/Home';
 import './styles/main.css';
+
+// Temporary placeholder components
+const Game = () => <div>Game Component Coming Soon</div>;
+const Caffeine = () => <div>Caffeine Tracker Coming Soon</div>;
+const DigitalSaman = () => <div>Digital Saman Coming Soon</div>;
 
 function App() {
   const [portfolioStrike, setPortfolioStrike] = useState(false)
