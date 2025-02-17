@@ -23,15 +23,15 @@ function App() {
 
   return (
     <Router>
-      <nav className="nav-menu">
-        <Link to="/">Home</Link>
-        <Link to="/todolist">To do List</Link>
-        <Link to="/seconds">Seconds</Link>
-        <Link to="/game">There will be clicks</Link>
-        <Link to="/blog/home">Blog</Link>
-        <Link to="/caffeine">Caffeine Tracker</Link>
-        <Link to="/digitalsaman">Digital Saman</Link>
-      </nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/todolist">To do List</Link></li>
+        <li><Link to="/seconds">Seconds</Link></li>
+        <li><Link to="/game">There will be clicks</Link></li>
+        <li><Link to="/blog/home">Blog</Link></li>
+        <li><Link to="/caffeine">Caffeine Tracker</Link></li>
+        <li><Link to="/digitalsaman">Digital Saman</Link></li>
+      </ul>
 
       <main>
         <h1 id="animated" onClick={handleHeaderClick}>

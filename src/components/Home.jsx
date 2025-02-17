@@ -3,9 +3,12 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div>
-      <h2>Welcome to my site!</h2>
-      <p>Feel free to explore using the navigation menu above.</p>
+    <div className="content-container">
+      <div id="projects_table">
+        <h3>Welcome!</h3>
+        <p>I'm Saman Ashoori, a software developer passionate about building interactive web applications.</p>
+        <p>Feel free to explore my projects using the navigation menu above.</p>
+      </div>
     </div>
   );
 }
