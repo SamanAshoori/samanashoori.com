@@ -6,8 +6,25 @@ channel = "stable-24_05"
 [deployment]
 deploymentTarget = "static"
 publicDir = "/"
+run = ["sh", "-c", "npx serve habitTracker/dist -p 3000"]
+build = ["sh", "-c", "cd habitTracker && npm run build"]
 
 [[ports]]
 localPort = 5173
 externalPort = 80
 exposeLocalhost = true
+
+[[ports]]
+localPort = 5174
+externalPort = 3000
+
+[workflows]
+runButton = "Habit Tracker"
+
+[[workflows.workflow]]
+name = "Habit Tracker"
+author = 39128971
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd habitTracker && npm run dev"
