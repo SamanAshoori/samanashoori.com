@@ -4,6 +4,9 @@
   "description": "Welcome to my personal portfolio website! This project showcases my work, projects, and professional journey. It is built using **HTML**, **CSS**, **JavaScript**, **Flask**, and **SQL** for a dynamic and interactive experience.",
   "main": "main.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
