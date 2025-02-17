@@ -6,20 +6,8 @@ channel = "stable-24_05"
 [deployment]
 deploymentTarget = "static"
 publicDir = "/"
-run = ["sh", "-c", "npm run preview"]
-build = ["sh", "-c", "npm run build"]
-
-[workflows]
-runButton = "React Dev"
-
-[[workflows.workflow]]
-name = "React Dev"
-author = 39128971
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npm run dev"
 
 [[ports]]
 localPort = 5173
 externalPort = 80
+exposeLocalhost = true

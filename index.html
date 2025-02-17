@@ -1,13 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
+<head>
     <title>Saman Ashoori</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button class="hamburger">Menu</button>
+    <ul class="nav-menu">
+        <li><a href="index">Home</a></li>
+        <li><a href="todolist">To do List</a></li>
+        <li><a href="seconds">Seconds</a></li>
+        <li><a href="game">There will be clicks</a></li>
+        <li><a href="blog/home">Blog</a></li>
+        <li><a href="caffeine">Caffeine Tracker</a></li>
+        <li><a href="digitalsaman">Digital Saman</a></li>
+    </ul>
+    <main>
+        <h1 id="animated">
+            Welcome to my <span id="portfolioText">Portfolio</span> <span id="websiteText">Website</span>
+        </h1>
+        <img src="images/saman.png" alt="Saman Ashoori" style="width: 200px; height: 200px;">
+        <p>I am Saman Ashoori, a computer guy who loves programming, problem solving and mostly games, I turn caffeine into code and spite into work output.</p>
+        <div id="shortIntro">
+            <h4>About me</h4>
+            <p>I love computer science, especially programming. It is all about making cool, useful stuff. Hell, sometimes I make useless stuff too! as you can see below. </p>
+            <p>Data Analyst based in Sheffield (UK)</p>
+        </div>
+        <div id="buttons">
+            <button onclick="showContent('work')" id="workButton">Work Experience</button>
+            <button onclick="showContent('education')" id="educationButton">Education</button>
+        </div>
+        <div class="content-container">
+            <div id="work" class="content">
+                <h3>Data Analyst Apprentice - SMRS</h3>
+                <h4>(September 2023 - Present)</h4>
+                <p>Started as a Data Analyst apprentice at SMRS, but thanks to my coding and computer science background, I passed the training.</p>
+                <p>Worked on projects using Python, Tableau, Power BI, and other tools basically turning stats into something useful.</p>
+                <p>I built programs to pull data from APIs and automate tasks using Python. Because why do things manually when you can code your way out of it?</p>
+            
+                <h3>Retail and Hospitality</h3>
+                <h4>(September 2018 - Present)</h4>
+                <p>I have worked in retail and hospitality before and during uni, and even alongside my apprenticeship. Since 2022, I have always had at least two jobs because rest is overrated</p>
+                <p>Roles: Greggs (Team Member to Shift Leader, 2018-2022), Revolution (Bartender, 2022-2025), Aldi (Store Assistant, 2023-2025).</p>
+                <p>Mainly did this to top up the apprenticeship income and keep in touch with colleagues I actually like.</p>
+                <p>Somehow managed to juggle it all without sacrificing sleep, gym, or a social life. (social life is the lie)</p>
+            </div>
+            <div id="education" class="content">
+                <h3>DipHE Computer Science - Manchester Metropolitan University</h3>
+                <h4>(September 2019 - May 2022)</h4>
+                <p>During my time at MMU - I have undertaken the fundamentals of computer science</p>
+                <p>I learnt to program in Java, C++ , C# , SQL and Python as well as the Web Dev Languages (JS,HTML,CSS) and sadly some PHP</p>
+                <p>I have also learnt about the theory of computer science as well as mathematics behind it)</p>
+                <p>Projects included Oracle Databases , Sleep Tracking Mobile App and Making my own compiler</p>
+                <h3>Meadowhead School Academy Trust</h3>
+                <h4>(September 2012 - June 2019)</h4>
+                <p>2 A Levels: Computer Science and Geography</p>
+                <p>BTEC Level 3 National Extended Certificate Business Studies: Distinction</p>
+                <p>8 GCSEs including Maths & English</p>
+            </div>
+        </div>
+
+    <div id="projects_table">
+        <h3>Projects</h3>
+        <p>Here are my solo projects that I have worked on in my free time</p>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Technologies</th>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/SamanAshoori/samanashoori.com" target="_blank">This MF Website</a></td>
+                <td>My portfolio website including the blog, to do list, seconds and the hit game there will be clicks</td>
+                <td>HTML, CSS, JS</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.kaggle.com/code/samanashoori/danish-house-market-analysis" target="_blank">Jupyter Nutebook on Danish Housing Market</a></td>
+                <td>A Jupyter Notebook where I dug into a Kaggle dataset on the Danish housing market.</td>
+                <td>Python (Jupyter, pandas, numpy, matplotlib, scikit-learn)</td>
+            </tr>
+            <tr>
+                <td><a href="https://replit.com/@samanashoori/LFG#readme.md" target="_blank">LFG BOT</a></td>
+                <td>LETS FUCKING GO Bot - A discord bot that is ran on replit and deployed on my discord server with friends that sends a gif if the correct conditions appear</td>
+                <td>Python, Discord API</td>
+            </tr>
+            <tr>
+                <td><a href="https://replit.com/@samanashoori/caffeine-tracker" target="_blank">Caffeine Tracker</a></td>
+                <td>My first attempt at a full stack project - a interactive dashboard that tracks my caffeine through energy drinks</td>
+                <td>Python (Flask), SQL (PostgreSQl) - Deployed on Replit</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/SamanAshoori/Digital-Saman" target="_blank">Digital Saman</a></td>
+                <td>AI powered chatbot designed to emulate me </td>
+                <td>Python (Flask) and Gemini API</td>
+            </tr>
+
+        </table>
+    </div>
+        
+    </main>
+    <footer>
+        <h3>Contact me</h3>
+        <p>saman.ashoori@outlook.com</p>
+        <a href="https://github.com/SamanAshoori" target="_blank"><img src="images/github.png" alt="github link"></a>
+        <a href="https://www.kaggle.com/samanashoori" target="_blank"><img src="images/kaggle.png" alt="kaggle link"></a>
+        <a href="https://www.linkedin.com/in/saman-ashoori/" target="_blank"><img src="images/linkedin.png" alt="linkedin link"></a>
+    </footer>
+    <script src="main.js"></script>
+</body>
 </html>
